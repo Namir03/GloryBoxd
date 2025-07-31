@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+#parallax-header {
+    background: url('Black Hole.gif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    animation: fade-in 2s ease-in-out;
+}
+
+#parallax-header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#parallax-header p {
+    font-size: 1.5rem;
+}
+
+#about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #195005;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce-in {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animations Classes */
+.animate-header {
+    animation: forwards 3s ease-out;
+}
+
+.animate-text {
+    animation: fade-in 2s ease-out;
+}
+
+.animate-fade-up {
+    animation: fade-up 1.5s ease-out;
+}
+
+.animate-fade-in {
+    animation: fade-in 2s ease-out;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoJack Horseman</title>
+</head>
+<body>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    color: #f1f1f1;
+}
+
+/* Header */
+.movie-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #008000; /* Green */
+    color: #f1f1f1;
+}
+
+.movie-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #FFFF00; /* Yellow */
+}
+
+/* Movie Container */
+.movie-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #202020; /* Dark background for the page content */
+    color: #f1f1f1;
+}
+
+.movie-poster {
+    flex: 1;
+    text-align: center;
+}
+
+.movie-poster img {
+    width: 100%;
+    max-width: 400px;
+    border: 5px solid #008000; /* Green border around the poster */
+}
+
+.movie-details {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.movie-details h2 {
+    color: #FFFF00; /* Yellow for section titles */
+    border-bottom: 2px solid #008000; /* Green underline */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.movie-details p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+/* Screenshots */
+.screenshots {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.screenshots img {
+    width: 30%;
+    border: 2px solid #008000;
+}
+
+/* Famous Dialogues */
+blockquote {
+    font-style: italic;
+    background-color: #303030;
+    border-left: 5px solid #FFFF00; /* Yellow border for dialogues */
+    margin: 20px 0;
+    padding: 10px;
+}
+    </style>
+    <header class="movie-header">
+        <h1>BoJack Horseman</h1>
+    </header>
+
+    <section class="movie-container">
+        <div class="movie-poster">
+            <img src="BoJack Horseman.jpg" alt="Movie Poster">
+        </div>
+
+        <div class="movie-details">
+            <h2>Description</h2>
+            <p>
+                A humanoid horse, BoJack Horseman -- lost in a sea of self-loathing and booze -- decides it's time for a comeback. Once the star of a '90s sitcom, in which he was the adoptive father of three orphaned kids (two girls and a boy). The show was the hottest thing around, then suddenly, was canceled. Now 18 years later, BoJack wants to regain his dignity. With the aid of a human sidekick and a feline ex-girlfriend who is his agent, he sets out to make it happen. But Hollywood is vastly different from those days, and getting used to stuff like Twitter may take some time. This first animated series from Netflix -- with plenty of references to sex, drugs and alcohol -- is not for the little ones.
+            </p>
+
+            <h2>Screenshots</h2>
+            <div class="screenshots">
+                <img src="BH1.jpg" alt="Screenshot 1">
+                <img src="BH2.jpg" alt="Screenshot 2">
+                <img src="BH3.jpg" alt="Screenshot 3">
+            </div>
+
+            <h2>Famous Dialogues</h2>
+            <blockquote>
+                "Sometimes I Feel Like I Was Born With A Leak, And Any Goodness I Started With Just Slowly Spilled Out Of Me, And Now It's All Gone."
+            </blockquote>
+            <blockquote>
+                "Every Happy Ending Has The Day After The Happy Ending."
+            </blockquote>
+            <blockquote>
+                "The Rules Are Different For Women."
+            </blockquote>
+        </div>
+    </section>
+</body>
+</html>

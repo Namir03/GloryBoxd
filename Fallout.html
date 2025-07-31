@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallout</title>
+</head>
+<body>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    color: #f1f1f1;
+}
+
+/* Header */
+.movie-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #008000; /* Green */
+    color: #f1f1f1;
+}
+
+.movie-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #FFFF00; /* Yellow */
+}
+
+/* Movie Container */
+.movie-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #202020; /* Dark background for the page content */
+    color: #f1f1f1;
+}
+
+.movie-poster {
+    flex: 1;
+    text-align: center;
+}
+
+.movie-poster img {
+    width: 100%;
+    max-width: 400px;
+    border: 5px solid #008000; /* Green border around the poster */
+}
+
+.movie-details {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.movie-details h2 {
+    color: #FFFF00; /* Yellow for section titles */
+    border-bottom: 2px solid #008000; /* Green underline */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.movie-details p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+/* Screenshots */
+.screenshots {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.screenshots img {
+    width: 30%;
+    border: 2px solid #008000;
+}
+
+/* Famous Dialogues */
+blockquote {
+    font-style: italic;
+    background-color: #303030;
+    border-left: 5px solid #FFFF00; /* Yellow border for dialogues */
+    margin: 20px 0;
+    padding: 10px;
+}
+    </style>
+    <header class="movie-header">
+        <h1>Fallout</h1>
+    </header>
+
+    <section class="movie-container">
+        <div class="movie-poster">
+            <img src="Fallout.html" alt="Movie Poster">
+        </div>
+
+        <div class="movie-details">
+            <h2>Description</h2>
+            <p>
+                In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants and bandits.
+            </p>
+
+            <h2>Screenshots</h2>
+            <div class="screenshots">
+                <img src="FO1.jpg" alt="Screenshot 1">
+                <img src="FO2.jpg" alt="Screenshot 2">
+                <img src="FO3.jpg" alt="Screenshot 3">
+            </div>
+
+            <h2>Famous Dialogues</h2>
+            <blockquote>
+                "Well, I Ain't Torturing You, Sweetheart. I'm Using You As Bait."
+            </blockquote>
+            <blockquote>
+                "I May End Up Looking Like You, But I'll Never Be Like You."
+            </blockquote>
+            <blockquote>
+                "War Never Changes."
+            </blockquote>
+        </div>
+    </section>
+</body>
+</html>
