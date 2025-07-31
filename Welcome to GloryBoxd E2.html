@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To GloryBoxd</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        overflow: hidden;
+        margin: 0;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .container {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .matrix-text {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: green;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
+    .cursor {
+        border-left: 2px solid green;
+        animation: blink 0.7s infinite;
+    }
+
+    .watermark {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 16px;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="matrix-text">
+            <span id="text"></span>
+            <span class="cursor"></span>
+        </div>
+        <div class="watermark">
+            <span>GloryBoxd</span>
+        </div>
+    </div>
+</body>
+<script>
+    const textElement = document.getElementById('text');
+    const phrases = [
+        'Wake up, User...',
+        'The GloryBoxd has you...',
+        'You are about to enter a whole new world.',
+        'Get Ready.',
+        'LOADING............................'
+    ];
+
+    let index = 0;
+    let letterIndex = 0;
+    let currentText = '';
+    let isDeleting = false;
+
+    function type() {
+        const currentPhrase = phrases[index];
+        if (isDeleting) {
+            currentText = currentPhrase.substring(0, currentText.length - 1);
+        } else {
+            currentText = currentPhrase.substring(0, currentText.length + 1);
+        }
+        textElement.innerHTML = currentText;
+
+        let typeSpeed = 100;
+        if (isDeleting) {
+            typeSpeed /= 2;
+        }
+
+        if (!isDeleting && currentText === currentPhrase) {
+            isDeleting = true;
+            typeSpeed = 2000;
+        } else if (isDeleting && currentText === '') {
+            isDeleting = false;
+            index = (index + 1) % phrases.length;
+            typeSpeed = 500;
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+
+    document.addEventListener('DOMContentLoaded', type);
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            window.location.href = 'GloryBoxd.html'; 
+        }
+    });
+</script>
+</html>

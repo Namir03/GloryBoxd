@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GloryBoxd</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/94dca08fed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <a class="navbar-brand" href="#">GloryBoxd</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Films</a>
+                </li>&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Lists</a>
+                </li>&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Members</a>
+                </li>&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Journal</a>
+                </li>&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link" href="Log In.html">
+                        <i class="fa-sharp fa-solid fa-user-secret fa-fade"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center mb-4" id="welcome">Welcome to GloryBoxd</h1>
+
+        <!-- Featured Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div id="featuredCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <iframe class="d-block w-100" height="500" src="https://www.youtube.com/embed/s7EdQ4FqbhY"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Pulp Fiction</h5>
+                                <p>The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits
+                                    intertwine in four tales of violence and redemption.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe class="d-block w-100" height="500" src="https://www.youtube.com/embed/7kSuas6mRpk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Kill Bill: Vol. 1</h5>
+                                <p>After awakening from a four-year coma, a former assassin wreaks vengeance on the team
+                                    of assassins who betrayed her.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe class="d-block w-100" height="500" src="https://www.youtube.com/embed/KnrRy6kSFF0"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Inglourious Basterds</h5>
+                                <p>In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a
+                                    group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for
+                                    the same.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/FeSLPELpMeM?si=NSj6Ilbs0zQ6EE7b" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>There Will Be Blood</h5>
+                                <p>In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a
+                                    group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for
+                                    the same.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BFTSrbB2wII?si=gpzZnVfQCkttmAqn" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen></iframe>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Rick and Morty</h5>
+                                <p>In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a
+                                    group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for
+                                    the same.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#featuredCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#featuredCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie List -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Pulp Fiction.jpg" class="card-img-top" alt="Pulp Fiction">
+                    <div class="card-body">
+                        <h5 class="card-title">Pulp Fiction</h5>
+                        <p class="card-text">The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of
+                            diner bandits intertwine in four tales of violence and redemption.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Kill Bill.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Kill Bill: Vol. 1</h5>
+                        <p class="card-text">After awakening from a four-year coma, a former assassin wreaks vengeance
+                            on the team of assassins who betrayed her. "Revenge is a dish best served cold."</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Inglorious-Basterds.jpg" class="card-img-top" alt="Inglourious Basterds">
+                    <div class="card-body">
+                        <h5 class="card-title">Inglourious Basterds</h5>
+                        <p class="card-text">In France during World War II, a plan to assassinate Nazi
+                            leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans
+                            for the same.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="There Will Be Blood.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">There Will Be Blood</h5>
+                        <p class="card-text">Daniel Plainview is a ruthless oil prospector who goes on a relentless pursuit to become the most powerful oil tycoon.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="The Fresh Prince Of Bel-Air.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">The Fresh Prince Of Bel-Air</h5>
+                        <p class="card-text">Things take a hilarious turn when a teen from Philadelphia is sent to live with his wealthy aunt and uncle in Bel-Air.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Once Upon Time In Hollywood.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Once Upon Time In Hollywood</h5>
+                        <p class="card-text">Rick, a washed-out actor, and Cliff, his stunt double, struggle to recapture fame and success in 1960s Los Angeles.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Reservoir Dogs.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Resevoir Dogs</h5>
+                        <p class="card-text">Six criminals, hired to steal diamonds, do not know each other's true identity. While attempting the heist, the police ambushes them.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Dog Day Afternoon.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Dog Day Afternoon</h5>
+                        <p class="card-text">A man decides to rob a local Brooklyn bank to pay for his lover's operation, but he is forced to take hostages after the heist does not go as planned.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Rockstar.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Rockstar</h5>
+                        <p class="card-text">A simpleton yet desperate college student wishing to become a musician. Heartbreak helps him reach his goal, also leads his to destruction.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="The Hateful Eight.jpeg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">The Hateful Eight</h5>
+                        <p class="card-text">When a bounty hunter and his captured fugitive are caught in the middle of a snowstorm in Wyoming, they encounter a twisted turn of events as they seek refuge in a small lodge.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Loving Vincent.jpeg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Loving Vincent</h5>
+                        <p class="card-text">Armand, the son of a postman, is sent to deliver a posthumous letter to Vincent van Gogh's brother. His task turns into an investigation as he sets out to discover the truth behind Van Gogh's suicide.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Bohemian Rhapsody.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Bohemian Rhapsody</h5>
+                        <p class="card-text">With his impeccable vocal abilities, Freddie Mercury and his rock band, Queen, achieve superstardom. However, amidst his skyrocketing success, he grapples with his ego, sexuality and a fatal illness.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="The Departed.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">The Departed</h5>
+                        <p class="card-text">An undercover agent and a spy constantly try to counter-attack each other in order to save themselves from being exposed in front of the authorities. Meanwhile, both try to infiltrate an Irish gang.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="The Social Network.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">the social network</h5>
+                        <p class="card-text">Mark Zuckerberg creates a social networking site, Facebook, with his friend Eduardo's help. Though it turns out to be a successful venture, he severs ties with several people along the way.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Bullet Train.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Bullet Train</h5>
+                        <p class="card-text">Ladybug, a professional assassin, is assigned to retrieve a briefcase from a bullet train. Soon, he finds himself battling many other killers who board the same train but with a different objective.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Django Unchained.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Django Unchained</h5>
+                        <p class="card-text">Django, an African slave, is freed by a German bounty hunter and becomes his apprentice. Together, they attempt to rescue his wife, who has been enslaved by a charming but cruel plantation owner.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Fury.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Fury</h5>
+                        <p class="card-text">By the end of the Second World War, the allies in the European theatre are into their final showdown. Things become tough for Don Collier, a German tank commander, while counter-attacking the enemy.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Tamasha.webp" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Tamasha</h5>
+                        <p class="card-text">Ved and Tara fall in love while on a holiday in Corsica and decide to keep their real identities undisclosed. Tara returns to Delhi and meets a new Ved, who is trying to discover his true self.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="The Big Short.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">The Big Short</h5>
+                        <p class="card-text">In the mid-2000s, a few finance experts observe the instability in the US housing market and predict its collapse. Through their research, they discover the flaws and corruption in the system.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Fleabag.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Fleabag</h5>
+                        <p class="card-text">A dry-witted woman, known as Fleabag, has no filter as she navigates life and love in London while trying to cope with tragedy. The grief-riddled woman tries to heal and rejects anyone who tries to help.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Rick and Morty.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Rick and Morty</h5>
+                        <p class="card-text">Rick, an alcoholic sociopath and scientist, lives with his daughter Beth's family. Apart from building gadgets, he takes his morally right but dimwit grandson Morty on absurd intergalactic adventures.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Fallout.jpeg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Fallout</h5>
+                        <p class="card-text">In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants, bandits, thugs and bounty hunters.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Ocean's Eleven.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Ocean's Eleven</h5>
+                        <p class="card-text">Danny Ocean, a gangster, rounds up a gang of associates to stage a sophisticated and elaborate casino heist which involves robbing three Las Vegas casinos simultaneously during a popular boxing event.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="The Pursuit Of Happyness.jpg" class="card-img-top" alt="Kill Bill">
+                    <div class="card-body">
+                        <h5 class="card-title">Pursuit Of Happyness</h5>
+                        <p class="card-text">Chris Gardner, a desperate and good-willed man, takes up an unpaid internship in a brokerage firm after he loses his life's earnings selling a product he invested in. His wife leaves him and he is left with the custody of his son.</p>
+                        <a href="#" class="btn btn-primary" id="View">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 
